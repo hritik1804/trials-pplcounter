@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calci.css">
+    <title>Calculator</title>
+    
+  </head>
+  <body>
+    <h1 class="header">Basic Calculator</h1>
+    <table border="1px" width="30%" id="table">
+        <tr height="50px">
+            <td colspan="3" class="row">
+                <input type="text" style="width: 97%; height: 50px" id="result"/></td>
+            <td class="row">
+                <input type="button" style="width: 100%; height: 54px" value="C" onclick="clr()"/></td>
+        </tr>
+      <tr height="50px">
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('7')">7</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('8')">8</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('9')">9</button>
+        </td>
+        <td class="row"> 
+          <button style="height: 50px; width: 100%" onclick="display('*')">*</button>
+        </td>
+      </tr>
+      <tr height="50px">
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('4')">4</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('5')">5</button>
+        </td class="row">
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('6')">6</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('/')">/</button>
+        </td>
+      </tr>
+      <tr height="50px">
+        <td class="row"><button style="height: 50px; width: 100%" onclick="display('1')">1</button></td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('2')">2</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('3')">3</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('-')">-</button>
+        </td class="row">
+      </tr>
+      <tr height="50px">
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('0')">0</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('.')">.</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="evalu('=')">=</button>
+        </td>
+        <td class="row">
+          <button style="height: 50px; width: 100%" onclick="display('+')">+</button>
+        </td>
+      </tr>
+    </table>
+    <script src="calci.js"></script>
+  </body>
+</html>
